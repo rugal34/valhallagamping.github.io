@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valhalla Glamping - Aventura en la Naturaleza</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#activities">Actividades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>¡Descubre la Aventura en Valhalla Glamping!</h1>
+            <p>Vive una experiencia única en medio de la naturaleza.</p>
+            <a href="#contact" class="cta-btn">¡Reserva Ahora!</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Acerca de Valhalla Glamping</h2>
+            <p>Valhalla Glamping te ofrece una experiencia inolvidable en cabañas alpinas y zonas de camping, diseñadas para parejas y grupos.</p>
+            <!-- Agrega más información sobre Valhalla Glamping aquí -->
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Cabañas alpinas acogedoras</li>
+                <li>Zonas de camping espaciosas</li>
+                <li>Cocina equipada, baño privado y más</li>
+                <!-- Agrega más servicios aquí -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2>Actividades y Atracciones</h2>
+            <ul>
+                <li>Montar bicicleta en los senderos naturales</li>
+                <li>Hacer trekking y trail running</li>
+                <li>Observar aves en su hábitat natural</li>
+                <!-- Agrega más actividades y atracciones aquí -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>¡Reserva tu Aventura Ahora!</h2>
+            <p>Contáctanos para obtener más información y reservar tu estadía en Valhalla Glamping.</p>
+            <form action="procesar_reserva.php" method="POST">
+                <h2>Formulario de reserva Valhalla Glamping</h2>
+                <p>Donde los aventureros encuentran su lugar en la naturaleza</p>
+              
+                <h3>Detalles de reservación</h3>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                  <label for="celular">Celular</label>
+                  <input type="tel" id="celular" name="celular" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="fecha-checkin">Fecha Check-in</label>
+                  <input type="text" id="fecha-checkin" name="fecha-checkin" placeholder="dd-MMM-yyyy" required>
+                  <span>El check in es a las 2 de la tarde.</span>
+                </div>
+              
+                <h3>Elije tu plan</h3>
+                <div class="form-group">
+                  <select id="tipo-plan" name="tipo-plan" required>
+                    <option value="" selected disabled>Seleccione un plan</option>
+                    <option value="plan-pareja">Plan Pareja - Cabaña $250.000</option>
+                    <option value="plan-familiar">Plan Familiar - Amigos Cabaña - Hasta 6 personas $400.000</option>
+                    <option value="plan-camping-pareja">Plan Pareja - Camping $60.000</option>
+                    <option value="plan-camping-amigo">Plan Amigo - Camping - Hasta 15 Personas $200.000</option>
+                  </select>
+                </div>
+              
+                <div class="form-group">
+                  <label for="codigo-descuento">Código de descuento</label>
+                  <input type="text" id="codigo-descuento" name="codigo-descuento">
+                </div>
+              
+                <div class="form-group">
+                  <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones" required>
+                  <label for="terminos-condiciones">Acepto los términos y condiciones de forma voluntaria.</label>
+                </div>
+              
+                <button type="submit">Enviar reserva</button>
+              </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Valhalla Glamping. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
